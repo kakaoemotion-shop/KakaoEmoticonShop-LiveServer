@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.2.0.js"></script>
+    <title>상세페이지</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/indexTOP.css">
+    <link rel="stylesheet" href="/static/css/detailpage.css">
+    <link rel="stylesheet" href="/static/css/togglemenu.css">
+</head>
+<div id="container">
+    <div class="aside-container aside-hide">
+        <aside class="menu-aside">
+        </aside>
+        <div class="aside-blank"></div>
+    </div>
+</div>
+<header class="header">
+    <div class="header-top">
+        <button class="toggle-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="/index" class="logo-button">
+            <h1>kakao<span>emoticon</span> shop</h1>
+        </a>
+        <button class="search-button" onclick="goToSearchPageButton()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button class="mypage-button">
+            <img src="/static/images/profile_default.png" alt="">
+        </button>
+    </div>
+    <nav class="header-menu">
+        <ul class="menu-list">
+            <li class="menu-list-button"><a href="/index">홈</a></li>
+            <li class="menu-list-button"><a href="/main/new">신규</a></liu>
+            <li class="menu-list-button"><a href="/main/hot">인기</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="emoticon-area">
+    <div class="emoticon-product">
+        <div class="emoticon-box">
+            <div class="emoticon-thumb">
+                <img class="main-emoticon"
+                    src="/static/images/noimg.jpg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div class="txt-area">
+        <div class="txt-box">
+            <h3 class="emoticon-name">상냥한 배코 (feat.존댓말)</h3>
+            <span class="txt-author">ⓒ 코나아이</span>
+            <div class="price-box">
+                <span class="txt-promotion">항상 전상품 20% 할인</span>
+                <div>
+                    <span class="txt-price">2,000</span>
+                    <span class="txt-price-won">원</span>
+                    <div class="right-like-box">
+                        <i class="fa-regular fa-heart heart-detail"></i>
+                    </div>
+                </div>
+            </div>
+            <button class="purchase-button">구매하기</button>
+        </div>
+    </div>
+</div>
+<div class="subemoticon-area">
+    <div class="subemoticon-box">
+        <div class="subemoticon-img">
+            <img class="subemoticon-number"
+                src="/static/images/noimg.jpg">
+            <img class="subemoticon-number"
+                src="/static/images/noimg.jpg">
+            <img class="subemoticon-number"
+                src="/static/images/noimg.jpg">
+            <img class="subemoticon-number"
+                src="/static/images/noimg.jpg">
+        </div>
+    </div>
+</div>
+<div class="precautions">
+    <div class="precautions-box">
+        <button class="product-btn">
+            <h4 class="product-guide">상품안내<i class="fa-solid fa-caret-down"></i></h4>
+        </button>
+        <dd class="product-btn-guide" style="display: none;">부가가치세 10%가 포함된 가격입니다.</dd>
+        <dd class="product-btn-guide" style="display: none;">결제 완료 후 ‘카카오톡’ 모바일 앱 메시지를 통해서 즉시 지급됩니다.</dd>
+        <dd class="product-btn-guide" style="display: none;">선물 이모티콘은 결제 완료 후 선물받는 친구에게 이모티콘 메세지가 발송되므로 수신자가 직접 이모티콘을 다운로드 받을 수 있습니다.</dd>
+        <dd class="product-btn-guide" style="display: none;">구매한 이모티콘은 카카오톡 모바일 앱 및 카카오톡 PC 서비스에서 사용할 수 있습니다.</dd>
+        <dd class="product-btn-guide" style="display: none;">이 이모티콘을 구매, 또는 선물하면 카카오의 다른 서비스에서도 사용할 수 있습니다. 다만, 플러스 다운로드 하는 경우 카카오톡에서만 사용 가능합니다. 카카오는 회
+            사의 사정, 기타 제반 여건에 따라 이모티콘 사용처를 추가하거나 변경할 수 있습니다.</dd>
+        <dd class="product-btn-guide" style="display: none;">카카오 이모티콘샵에서는 카카오톡 모바일 앱 내 이모티콘 스토어에서 판매하고 있는 이모티콘 중 일부는 판매하지 않을 수 있습니다.</dd>
+        <dd class="product-btn-guide" style="display: none;">대한민국 카카오톡 사용자가 아닌 경우에는 일부 기능 또는 구매가 제한될 수 있습니다.</dd>
+        <dd class="product-btn-guide" style="display: none;">미성년자인 회원이 법정대리인의 동의없이 상품 등을 구매하는 경우 본인 또는 법정대리인이 이를 취소할 수 있습니다.</dd>
+        <button class="refund-btn">
+            <h4 class="product-guide">해지 및 환불안내<i class="fa-solid fa-caret-down"></i></h4>
+        </button>
+        <dd class="refund-btn-guide" style="display: none;">결제 후 계약내용에 관한 서면을 교부받은 날(이하 ‘구매일’)로부터 7일 이내에 청약철회할 수 있습니다. 단, 콘텐츠의 내용이 표시·광고 내용과 다르거나 계약 내용과 다르게 이행된 경우에는 당해
+            콘텐츠를 공급받은 날로부터 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날로부터 30일 이내에 청약철회할 수 있습니다.</dd>
+        <dd class="refund-btn-guide" style="display: none;">아래 내용에 해당하는 경우에는 청약철회 또는 환불 신청이 제한될 수 있습니다.
+            1) 구매일로부터 7일 이내에 용역 또는 「문화산업진흥 기본법」 제2조제5호의 디지털콘텐츠의 제공이 개시된 경우. 다만, 가분적 용역 또는 가분적 디지털콘텐츠로 구성된 계약의 경우에는 제공이
+            개시되지 아니한 부분에 대하여는 예외로 함.
+            2) 구매일로부터 7일이 경과한 후 단순변심으로 인한 환불 신청의 경우</dd>
+        <dd class="refund-btn-guide" style="display: none;">청약 철회/환불 요청을 원하실 경우 [카카오 고객센터] 에서 신청 할 수 있으며, 소비자의 청약철회일로부터 3 영업일 이내에 지급받은 대금의 환급을 정당한 사유 없이 지연하는 경우 소비자는
+            지연기간에 대해서 연 20%의 지연 배상금을 회사에게 청구할 수 있습니다.</dd>
+        <dd class="refund-btn-guide" style="display: none;">선물한 이모티콘의 경우 구매일로부터 7일이 경과하였거나, 선물을 받은 이용자가 다운로드 받은 경우 환불이 불가합니다.</dd>
+        <dd class="refund-btn-guide" style="display: none;">청약철회 및 환불 시 이미 사용하신 할인쿠폰은 재발급해드리지 않습니다.</dd>
+        <dd class="refund-btn-guide" style="display: none;">그 외 다른 사항에 대한 청약철회 및 환불은 카카오 유료서비스 이용약관 및 콘텐츠산업진흥법의 기준에 따르며, 피해보상 및 불만 처리 등 필요한 사항은 [카카오 고객센터]로 연락 주시기 바랍니다.
+        </dd>
+    </div>
+</div>
+
+<body>
+
+</body>
+<script>
+    $(function () {
+    $('.product-btn').click(function () {
+        if ($('.product-btn-guide').css('display') == "none") {
+            $('.product-btn-guide').show();
+        } else {
+            $('.product-btn-guide').hide();
+        }
+    });
+});
+</script>
+<script>
+    $(function () {
+    $('.refund-btn').click(function () {
+        if ($('.refund-btn-guide').css('display') == "none") {
+            $('.refund-btn-guide').show();
+        } else {
+            $('.refund-btn-guide').hide();
+        }
+    });
+});
+</script>
+
+<script>
+    function goToSearchPageButton() {
+        const searchPageButton = document.querySelector(".search-button");
+        searchPageButton.onclick(
+            location.href = 'http://127.0.0.1:8000/search'
+        )
+    }
+</script>
+
+<body>
+
+</body>
+<script src="/static/js/account/principal.js"></script>
+<script src="/static/js/function/toggleuser.js"></script>
+<script src="/static/js/kakaopage/detail.js"></script>
+</html>

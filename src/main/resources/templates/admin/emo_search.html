@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오 이모티콘샵</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/admin/emo_search.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <button class="toggle-button">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <a class="logo-button">
+                <h1>kakao<span>emoticon ADMIN</span></h1>
+            </a>
+
+            <button class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="mypage-button">
+                <img src="/static/images/profile_default.png" alt="">
+            </button>
+        </div>
+
+        <nav class="header-menu">
+            <ul class="menu-list">
+                <li class="menu-list-button"><a href="/admin/emo">이모티콘 등록</a></li>
+                <li class="menu-list-button"><a href="/admin/search">이모티콘 조회</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="search">
+            <div class="search-head">
+                <div class="search-left">
+                    <button class="delete-button">삭제</button>
+                    <input type="text" class="search-bar">
+                    <button class="search-icon-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="search-right">
+                    <h1 class="search-main-title">이모티콘 조회</h1>
+                    <h3 class="search-sub-title">등록된 이모티콘을 조회할 수 있습니다.</h3>
+                </div>
+            </div>
+
+            <div class="search-group">
+                <table class="search-table">
+                    <thead>
+                        <tr class="a">
+                            <th><input type="checkbox" class="delete-checkall"></th>
+                            <th>아이디</th>
+                            <th>코드</th>
+                            <th>이름</th>
+                            <th>제작사</th>
+                            <th>등록일</th>
+                            <th>수정</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                    </tbody>
+                </table>
+         
+            </div>
+
+            <div class="page-controller">
+                <a href="" class="disabled">이전</a>
+                <ul class="page-numbers">
+                    <a href=""><li>1</li></a>
+                    <a href=""><li>2</li></a>
+                    <a href=""><li>3</li></a>
+                    <a href=""><li>4</li></a>
+                    <a href=""><li>5</li></a>
+                </ul>
+                <a href="" class="">다음</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/admin/emo_search.js"></script>
+</body>
+</html>

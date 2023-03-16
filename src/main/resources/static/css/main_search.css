@@ -1,0 +1,128 @@
+/* =============== 검색 창 ================ */
+.content{
+    width: 100%;
+  
+    background-color: white;
+  }
+  
+  .search-view{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    margin-top: 125px;
+    width: 1124px;
+  
+    background-color: white;
+  }
+  .search-title{
+    display: flex;
+    justify-content: center;
+  
+    width: 500px;
+    height: 50px;
+  
+    background-color: white;
+  }
+  .search-title h2{
+    margin-top: 20px;
+  
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .search-title p{
+    margin-top: 20px;
+    margin-left: 10px;
+  
+    font-size: 20px;
+    font-family: 800;
+  
+    color: red;
+  }
+  
+  .search-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    margin-top: 15px;
+  
+    width: 1024px;
+    height: 100%;
+  
+    background-color: rgb(255, 255, 255);
+  }
+  .emotion-serch {
+    display: flex;
+    justify-content: space-around;
+  
+    width: 500px;
+    height: 150px;
+  
+    border-bottom: 2px solid #dbdbdb;
+    background-color: rgb(255, 255, 255);
+  }
+  .emotion-title{
+    margin-top: 50px;
+  
+    width: 300px;
+    height: 50px;
+  
+    background-color:  white;
+  }
+  .emotion-title h3{
+    font-size: 18px;
+    font-weight: 800;
+    text-align: left;
+  
+    cursor: pointer;
+  }
+  .emotion-title h3:hover{
+    text-decoration: underline;
+  }
+  .emotion-title h4{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+  
+    color: #535252;
+  
+    cursor: pointer;
+  }
+  .like-button{
+    margin-top: 5px;
+  
+    width: 36px;
+    height: 36px;
+  
+    border: 1px solid #dbdbdb;
+    border-radius: 50px;
+    background-color: white;
+  
+    cursor: pointer;
+  }
+  .fa-heart{
+    margin-top: 5px;
+  
+    width: 16px;
+    height: 16px;
+  
+    font-size: 13px;
+  }
+  .emotion-view-img img{
+    margin-top: 13px;
+    
+    width: 125px;
+    height: 125px;
+  }
+
+  .emo-img{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  
+    width: 90px;
+    height: 90px;
+    
+    cursor: pointer;
+  }

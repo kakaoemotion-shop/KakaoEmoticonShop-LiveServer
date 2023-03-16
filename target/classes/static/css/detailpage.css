@@ -1,0 +1,209 @@
+.emoticon-area{
+    display: flex;
+    padding: 0;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 50px 122px 50px 40px;
+    width: 1000px;
+    height: 307px;
+
+
+}
+
+.emoticon-product{
+    display: flex;
+    justify-content: flex-start;
+}
+.emoticon-box{
+    margin: auto 0;
+    position: relative;
+    padding-right: 40px;
+    display: flex;
+    left: 0;
+    width: 386px;
+    height: 207px;
+}
+.emoticon-thumb{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.main-emoticon{
+    position: absolute;
+    height: 100%;
+
+}
+.txt-area{
+    margin: auto 0;
+    width: 100%;
+    height: 207px;;
+}
+.txt-box{
+    width: 100%;
+    height: 207px;
+}
+.emoticon-name{
+    font-size: 30px;
+    color: #191919;
+}
+.txt-author{
+    font-size: 14px;
+    color: #999999;
+    margin-top: 4px;
+
+}
+.price-box{
+    padding: 22px 0px 23px;
+    height: 51px;
+}
+.txt-promotion{
+    font-size: 14px;
+    color: #191919;
+}
+.txt-price{
+    margin-left: 2px;
+    font-size: 24px;
+    color: #FA4637;
+    font-weight: 600;
+}
+.txt-price-won{
+    font-size: 14px;
+    color: #FA4637;
+    font-weight: 600;
+}
+.right-like-box{
+    display: flex;
+    float: right;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #7f7f7f;
+    border-radius: 50%;
+    background-color: #fff;
+
+    cursor: pointer;
+}
+.like-button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #7f7f7f;
+    border-radius: 50%;
+    background-color: #fff;
+
+    cursor: pointer;
+}
+.dislike-button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #7f7f7f;
+    border-radius: 50%;
+    background-color: #fff;
+
+    cursor: pointer;
+}
+
+.full-heart {
+    margin: 0 auto;
+    font-size: 20px;
+    color: deeppink;
+}
+.empty-heart {
+    margin: 0 auto;
+    font-size: 20px;
+    color: deeppink;
+}
+
+.purchase-button{
+    margin-top: 4px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 44px;
+    font-size: 15px;
+    background-color: #FEE500;
+
+    cursor: pointer;
+}
+
+.subemoticon-area{
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+}
+.subemoticon-container{
+    display: flex;
+    justify-content: space-between;
+}
+.subemoticon-box{
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 1025px;
+    height: 320px;
+}
+.subemoticon-number{
+    width: 200px;
+    height: 200px;
+}
+.subemoticon-img{
+    width: 100%;
+}
+
+.precautions{
+    background-color: #fafafa;
+}
+.precautions-box{
+    margin: 0 auto;
+    width: 1025px;
+    height: 100%;
+}
+.product-btn{
+    margin-bottom: 10px;
+    padding: 18px 0px;
+    width: 100%;
+    height: 54px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+.refund-btn{
+    margin-bottom: 10px;
+    padding: 18px 0px;
+    width: 100%;
+    height: 54px;
+    display: block;
+    border: none;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+.product-guide{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+.fa-caret-up, .fa-caret-down{
+    float: right;
+    font-size: 25px;
+    padding-bottom: 3px;
+}
+dd{
+    position: relative;
+    font-size: 14px;
+    color: #7f7f7f;
+    padding: 0 0 15px 11px
+}
+dd::before{
+    position: absolute;
+    margin-left: -2px;
+    left: 0px;
+    width: 1px;
+    color: #ccc;
+    content: "•";
+}
+
+.charge{
+display: none;}

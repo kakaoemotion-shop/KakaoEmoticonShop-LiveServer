@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오계정</title>
+    <link rel="stylesheet" href="/static/css/account/login.css">
+</head>
+
+<body class="type_responsive">
+    <div id="__next" data-reactroot="">
+    <div class="container-doc">
+        <div class="inner_container">
+            <main class="doc-main">
+                <div class="doc-title">
+                    <h1 class="tit_service">
+                        <span class="logo_kakao">
+                            <span class="ir_wa">Kakao</span>
+                        </span>
+                    </h1>
+                </div>
+                <article id="mainContent" class="content-article">
+                    <div class="cont_login">
+
+                        <div class="login_kakaomail">
+                            <form action="/account/login" method="post">
+                                <div class="box_tf fst">
+
+                                    <input type="text" id="login-username" name="username" placeholder="아이디" required class="tf_g" value="">
+                                    <div class="util_tf">
+
+                                    </div>
+                                </div>
+                                <div class="box_tf">
+
+                                    <input type="password" id="login-password" name="password" placeholder="비밀번호" required autocomplete="off" class="tf_g" value="">
+                                    <div class="util_tf"></div>
+                                </div>
+
+                                <div class="login-error" >
+                                    사용자 정보를 다시 확인하세요.
+                                </div>
+                                <div class="confirm_btn">
+                                    <button type="submit" class="btn_g highlight submit">로그인</button>
+<!--                                    <span class="line_or"><span class="txt_or">또는</span></span>-->
+<!--                                    <button type="button" class="btn_g">QR코드 로그인</button>-->
+                                </div>
+                                
+                            </form>
+
+                            <div class="info_user">
+                                <a href="/account/register" class="link_join">회원가입</a>
+                                <ul class="list_user">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </main>
+            <footer class="doc-footer">
+                <strong class="screen_out">서비스 이용정보</strong>
+                <div class="service_info">
+                    <a href="https://www.kakao.com/policy/terms?lang=ko" class="link_info">이용약관</a>
+                    <a href="https://www.kakao.com/policy/privacy?lang=ko" class="link_info">
+                        <strong>개인정보 처리방침</strong>
+                    </a>
+                    <a href="https://www.kakao.com/policy/oppolicy?lang=ko" class="link_info">운영정책</a>
+                    <a href="https://cs.kakao.com/" class="link_info">고객센터</a>
+                    <a href="https://www.kakao.com/notices?lang=ko" class="link_info">공지사항</a>
+                    <div class="item_select"><label id="selectLabel" class="screen_out">한국어</label>
+                        <button type="button" class="link_selected" role="combobox" aria-controls="listOption"
+                                aria-labelledby="selectLabel" aria-haspopup="listbox" aria-expanded="false"
+                                aria-activedescendant="">
+                            한국어
+                            <span class="ico_comm ico_arr"></span>
+                    </div>
+                </div>
+                <small class="txt_copyright">Copyright © <a class="link_kakaocorp" href="http://kakaocorp.com/">Kakao Corp.</a> All
+                    rights reserved.</small>
+            </footer>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+html {
+    font-size: 14px;
+
+}
+
+body {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+.register-header {
+    width: 100%;
+    height: 77px;
+    margin-top: 30px;
+}
+
+.register-header h1 {
+    font-weight: 500;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.register-content {
+    display: block;
+    margin: 15px auto 42px;
+    padding: 40px 0 40px;
+    border: 1px solid #dbdddb;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.register-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.register-group {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    width: 60%;
+}
+
+
+.input-group {
+    width: 72%;
+}
+
+.register-inputs {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.register-error {
+    margin-bottom: 10px;
+    font-size: 11px;
+    color: red;
+}
+
+.condition-text {
+    width: 100%;
+    height: 10 0%;
+
+    font-size: 12px;
+
+    resize: none;
+    overflow-y: auto;
+}
+
+.register-submit {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+
+.register-footer {
+    align-content: space-between;
+    font-size: 12px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.register-footer a {
+    font-size: 12px;
+    border-bottom: none;
+    color: black;
+    text-decoration: none;
+}
+
+.register-footer-p1 {
+    color: #999999;
+}

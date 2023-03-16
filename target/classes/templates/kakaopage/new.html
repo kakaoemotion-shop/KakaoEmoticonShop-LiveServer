@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <title>카카오 이모티콘샵</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/togglemenu.css">
+    <link rel="stylesheet" href="/static/css/new.css">
+</head>
+<body>
+  <div id="container">
+    <div class="aside-container aside-hide">
+      <aside class="menu-aside">
+      </aside>
+      <div class="aside-blank"></div>
+    </div>
+  </div>
+ 
+  <header class="header">
+    <div class="header-top">
+      <button class="toggle-button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <a class="logo-button" href="/index">
+          <h1>kakao<span>emoticon</span> shop</h1>
+      </a>
+
+      <button class="search-button" onclick="goToSearchPageButton()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <button class="mypage-button">
+          <img src="/static/images/profile_default.png" alt="">
+      </button>
+  </div>
+
+  <nav class="header-menu">
+    <ul class="menu-list">
+      <li class="menu-list-button"><a href="/index">홈</a></li>
+      <li class="menu-list-button"><a href="/main/new">신규</a></liu>
+      <li class="menu-list-button"><a href="/main/hot">인기</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <div class="banner">
+    <div class="banner-box">
+      <img src="/static/images/kakapMain_new01.png" alt="" class="br-left-img">
+      <img src="/static/images/kakapMain_new02.png" alt="" class="br-right-img">
+    </div>
+  </div>
+
+  <div class="content">
+    <div>
+      <ul class="new-info">
+        <li>
+          <a class="new-link" href="/main/detail">
+            <div class="new-info-title">
+              <h2 class="emo-name">이모티콘 이름1</h2>
+              <p class="author">작가 이름1</p>
+              <button class="like-button">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="new-info-img">
+              <img src="/static/images/noimg.jpg" alt="" class="emo-img">
+              <img src="/static/images/noimg.jpg" alt="" class="emo-img">
+              <img src="/static/images/noimg.jpg" alt="" class="emo-img">
+              <img src="/static/images/noimg.jpg" alt="" class="emo-img">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</body>
+<script>
+  function goToSearchPageButton() {
+      const searchPageButton = document.querySelector(".search-button");
+      searchPageButton.onclick(
+          location.href = 'http://127.0.0.1:8000/search'
+      )
+  }
+</script>
+
+<script src="/static/js/account/principal.js"></script>
+<script src="/static/js/function/toggleuser.js"></script>
+<script src="/static/js/search/new.js"></script>
+</html>

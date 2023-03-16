@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.korit.kakaoemotionshop.repository.LikeRepository">
+    <select id="getLikeStatus" resultType="Integer" parameterType="com.korit.kakaoemotionshop.entity.EmoLike">
+        select
+            count(*)
+        from
+            emo_like
+        where
+            emo_id = #{emoId}
+        and user_id = #{userId}
+    </select>
+
+    <insert id="addLike" parameterType="com.korit.kakaoemotionshop.entity.EmoLike">
+        insert into emo_like
+        value
+            (0,#{userId},#{emoId})
+    </insert>
+
+    <delete id="deleteLike" parameterType="com.korit.kakaoemotionshop.entity.EmoLike">
+        delete
+        from
+            emo_like
+        where
+            emo_id = #{emoId}
+        and user_id = #{userId}
+    </delete>
+
+    <select id="getLikeCount" resultType="Integer">
+        select
+            count(*)
+        from
+            emo_like
+        where
+            emo_id = #{emoId}
+    </select>
+</mapper>

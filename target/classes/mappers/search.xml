@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.korit.kakaoemotionshop.repository.SearchRepository">
+
+    <select id="getUserSearchEmoTotalCount"
+            parameterType="com.korit.kakaoemotionshop.web.dto.SearchEmoReqDto"
+            resultType="Integer">
+        select
+            count(*)
+        from
+            emo_mst
+        where
+            1 = 1
+        <if test="searchValue != null and searchValue != ''">
+            and emo_name like concat('%', #{searchValue}, '%')
+            or company like concat('%', #{searchValue}, '%')
+        </if>
+
+    </select>
+
+    <select id="userSearchEmo"
+            parameterType="com.korit.kakaoemotionshop.web.dto.SearchEmoReqDto"
+            resultType="com.korit.kakaoemotionshop.entity.SearchEmo">
+        select
+            em.emo_id as emoId,
+            em.emo_code as emoCode,
+            em.emo_name as emoName,
+            em.company,
+            min(cast(ei.image_id as unsigned)) as imageId,
+            ei.save_name as saveName
+        from
+            emo_mst em
+            left outer join emo_image ei
+                on(em.emo_code = ei.emo_code)
+        where
+        1 = 1
+        <if test='searchValue != null and searchValue != ""'>
+            and (emo_name like concat('%', #{searchValue}, '%')
+            or company like concat('%', #{searchValue}, '%'))
+        </if>
+        group by
+            em.emo_id,
+            em.emo_code,
+            em.emo_name,
+            em.company
+
+        limit #{index}, #{count}
+    </select>
+
+
+</mapper>

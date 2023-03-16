@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>카카오 이모티콘샵</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/emoimg.css">
+
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/togglemenu.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="aside-container aside-hide">
+            <aside class="menu-aside">
+            </aside>
+            <div class="aside-blank"></div>
+        </div>
+    </div>
+
+    <header class="header">
+         <div class="header-top">
+            <div>
+                <button class="toggle-button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <a href="/index" class="logo-button">
+                <h1>kakao<span>emoticon</span> shop</h1>
+            </a>
+
+            <button class="search-button" onclick="goToSearchPageButton()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="mypage-button">
+            </button>
+        </div>
+
+        <nav class="header-menu">
+            <ul class="menu-list">
+                <li class="menu-list-button"><a href="/index">홈</a></li>
+                <li class="menu-list-button"><a href="/main/new">신규</a></liu>
+                <li class="menu-list-button"><a href="/main/hot">인기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="main">
+        <img src="/static/images/main.gif" alt="" class="main-img">
+    </div>
+
+    <div class="content">
+
+        <div class="new">
+            <h1 class="new-title"><a href="/main/new">신규 이모티콘<i class="fa-solid fa-chevron-right"></i></a></h1>
+            <div class="new-emotion">
+                <ul class="new-list">
+                    <li>
+                        <a class="index-link" href="">
+                            <img src="/static/images/noimg.jpg" alt="" class="emo-img">
+                            <h2 class="emo-name">이모티콘 이름1</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hot">
+            <h1 class="hot-title"><a href="/main/hot">인기 이모티콘<i class="fa-solid fa-chevron-right"></i></a></h1>
+            <div class="hot-emotion">
+                <ul class="hot-list">
+                    <li>
+                        <a class="index-hot-link" href="/main/detail">
+                            <span class="emo-id">1</span>
+                            <div class="hot-sub-list">
+                                <h2 class="emo-name">이모티콘 이름1</h2>
+                                <p class="author">작가 이름1</p>
+                            </div>
+                            <img src="/static/images/noimg.jpg" alt="" class="emo-img">
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script>
+        function goToSearchPageButton() {
+            const searchPageButton = document.querySelector(".search-button");
+            searchPageButton.onclick(
+                location.href = '/search'
+            )
+        }
+    </script>
+
+    
+    <script src="/static/js/account/principal.js"></script>
+    <script src="/static/js/function/toggleuser.js"></script>
+    <script src="/static/js/function/index.js"></script>
+    <script src="/static/js/kakaopage/mainpage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.korit.kakaoemotionshop.repository.BuyerRepository">
+
+    <resultMap id="BuyerMst" type="com.korit.kakaoemotionshop.entity.BuyerMst">
+        <result property="buyerId" column="buyer_id"></result>
+        <result property="username" column="username"></result>
+        <result property="name" column="name"></result>
+        <result property="email" column="emo_name"></result>
+        <result property="emoName" column="buy_date"></result>
+    </resultMap>
+
+    <insert id="saveBuyer"
+            parameterType="com.korit.kakaoemotionshop.entity.BuyerMst"
+            useGeneratedKeys="true"
+            keyProperty="buyerId">
+        insert into buyer_mst
+        value ( 0, #{username}, #{name}, #{email}, #{emoName}, now());
+    </insert>
+
+
+
+</mapper>

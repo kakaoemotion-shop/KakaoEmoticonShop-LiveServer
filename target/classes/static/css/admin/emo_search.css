@@ -1,0 +1,310 @@
+/* =============== 상단 부분 ================ */
+.header{
+  width: 100%;
+  height: 110px;
+  background-color: white;
+  border-bottom: 1.5px solid #dbdbdb;
+}
+
+.header-top{
+  width: 100%;
+  height: 55px;
+
+  background-color: white;
+}
+
+.toggle-button{
+  position: relative;
+  left: 1%;
+  top: 19px;
+
+  width: 25px;
+  height: 25px;
+
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+
+  cursor: pointer;
+}
+
+.logo-button{
+  position: relative;
+  left: 45%;
+  bottom: 14px;
+
+  width: 190px;
+  height: 26px;
+
+  cursor: pointer;
+}
+.logo-button h1{
+  font-size: 20px;
+  font-weight: 400;
+}
+.logo-button span{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.search-button{
+  position: relative;
+  left: 95.3%;
+  bottom: 45px;
+
+  padding: 0px;
+  width: 24px;
+  height: 24px;
+
+  font-size: 18px;
+  border: none;
+  outline-style: none;
+  background-color: white;
+
+  cursor: pointer;
+}
+
+.mypage-button{
+  position: relative;
+  left: 96%;
+  bottom: 40px;
+
+  width: 24px;
+  height: 24px;
+
+  border: none;
+  border-radius: 10px;
+  outline-style: none;
+
+  cursor: pointer;
+}
+
+.mypage-button img{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+
+.header-menu{
+  width: 100%;
+  height: 55px;
+  background-color: white;
+}
+.menu-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.menu-list-button{
+  margin-top: 20px;
+  width: 154px;
+  height: 30px;
+  
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+
+  cursor: pointer;
+}
+.menu-list-button:hover{
+  border-bottom: 2px solid #000;
+}
+
+
+/* =============== 콘텐츠 부분 ================ */
+.content{
+  background-color: #373737;
+}
+.search{
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  width: 1024px;
+  height: 700px;
+
+  border: 1px solid #dbdbdb;
+  background-color: white;
+}
+.search-head{
+  display: flex;
+
+  width: 1024px;
+  height: 80px;
+}
+.search-left{
+  margin-top: 30px;
+  margin-left: 13px;
+
+  width: 500px;
+  height: 40px;
+
+  background-color: white;
+}
+.delete-button{
+  margin-right: 8px;
+
+  width: 70px;
+  height: 30px;
+
+  border: 1px solid red;
+  border-radius: 4.5px;
+  background-color: white;
+
+  cursor: pointer;
+}
+.delete-button:hover{
+  color: white;
+  font-weight: 600;
+  background-color: rgb(165, 16, 16);
+}
+.search-bar{
+  margin-right: 2px;
+  margin-top: 10px;
+
+  width: 200px;
+  height: 28.2px;
+
+  border: 0.5px solid #dbdbdb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-bar:focus{
+  outline: none;
+}
+.search-icon-btn{
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
+}
+.search-icon-btn:hover{
+  background-color: #f2f2f2;
+}
+.fa-magnifying-glass{
+  font-size: 15px;
+}
+
+.search-right{
+  width: 490px;
+  height: 80px;
+
+  text-align: right;
+
+  background-color: white;
+}
+.search-main-title{
+  padding-top: 10px;
+
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+}
+.search-sub-title{
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(92, 92, 92);
+}
+
+
+.search-group{
+  width: 1024px;
+  height: 580px;
+
+  background-color: white;
+}
+.search-table{
+  margin-left: 12px;
+
+  width: 1000px;
+  height: 580px;
+
+  border: 1px solid #bbbbbb;
+}
+.search-table th{
+  height: 30px;
+  text-align: center;
+  background-color: #bbbbbb;
+}
+.search-table tr{
+  height: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.no-search {
+  position: absolute;
+  left: 770px;
+  top: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 400px;
+  height: 300px;
+
+  background-color: #fff;
+}
+.no-search img {
+  padding-left: 100px;
+  width: 200px;
+  height: 200px;
+}
+.no-search h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.no-search h3 {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  color: #373737;
+}
+
+
+
+.delete-checkall{
+  cursor: pointer;
+}
+.delete-checkbox{
+  cursor: pointer;
+}
+.fa-square-pen{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+.page-controller{
+  display: flex;
+  justify-content: center;
+}
+.page-numbers{
+  display: flex;
+}
+.page-controller a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px 5px;
+  margin-top: 3px;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  background-color: white;
+}

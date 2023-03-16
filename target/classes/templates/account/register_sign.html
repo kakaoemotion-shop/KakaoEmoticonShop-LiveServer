@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <title>회원가입페이지</title>
+    <link rel="stylesheet" href="/static/css/account/register_sign.css">
+</head>
+
+<body>
+    <div class="register-header">
+        <h1>kakao</h1>
+    </div>
+    <div class="register-content">
+        <h1 class="register-title">카카오톡 이모티콘샵 회원가입</h1>
+
+        <div class="register-group">
+            <label for="register-username">사용자이름</label>
+            <div class="input-group">
+                <input type="text" id="register-username" class="register-inputs">
+                <div class="register-error"></div>
+            </div>
+        </div>
+        <div class="register-group">
+            <label for="register-password">비밀번호</label>
+            <div class="input-group">
+                <input type="password" id="register-password" class="register-inputs">
+                <div class="register-error"></div>
+            </div>
+        </div>
+        <div class="register-group">
+            <label for="register-repassword">비밀번호 확인</label>
+            <div class="input-group">
+                <input type="password" id="register-repassword" class="register-inputs">
+                <div class="register-error"></div>
+            </div>
+        </div>
+        <div class="register-group">
+            <label for="register-name">성명</label>
+            <div class="input-group">
+                <input type="text" id="register-name" class="register-inputs">
+                <div class="register-error"></div>
+            </div>
+        </div>
+        <div class="register-group">
+            <label for="register-email">이메일</label>
+            <div class="input-group">
+                <input type="text" id="register-email" class="register-inputs">
+                <div class="register-error"></div>
+            </div>
+        </div>
+
+        <button type="button" class="register-submit">가입하기</button>
+    </div>
+    <div class="register-footer">
+        <a href="https://www.kakao.com/policy/terms?lang=ko">이용약관</a>
+        <a href="https://www.kakao.com/policy/privacy?lang=ko">
+            <p2>개인정보 처리방침</p2>
+        </a>
+        <a href="https://www.kakao.com/policy/oppolicy?lang=ko">운영정책</a>
+        <a href="https://cs.kakao.com/">고객센터</a>
+        <a href="https://www.kakao.com/notices?lang=ko">공지사항</a>
+        <label for="">한국어</label>
+        <p class="register-footer-p1">Copyright <a href="">© Kakao Corp</a>. All rights reserved.</p>
+    </div>
+    <script src="/static/js/account/register.js"></script>
+</body>
+
+</html>

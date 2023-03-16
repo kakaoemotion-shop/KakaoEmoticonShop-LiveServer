@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.korit.kakaoemotionshop.repository.DetailRepository">
+    <select id="findEmoByEmoCode" resultType="com.korit.kakaoemotionshop.entity.EmoMst">
+        select
+            emo_id as emoId,
+            emo_code as emoCode,
+            emo_name as emoName,
+            company,
+            emo_date as emoDate
+        from
+            emo_mst
+        where
+            emo_code = #{emoCode}
+    </select>
+
+    <select id="findEmoImageAll" resultType="com.korit.kakaoemotionshop.entity.EmoImage">
+        select
+            image_id as imageId,
+            image_seq as imageSeq,
+            emo_code as emoCode,
+            save_name as saveName,
+            origin_name as originName
+        from
+            emo_image
+        where
+            emo_code = #{emoCode}
+        order by
+            emoCode,
+            imageSeq
+    </select>
+
+    <select id="findEmoImageOne" resultType="com.korit.kakaoemotionshop.entity.EmoImage">
+        select
+            min(image_id) as imageId,
+            image_seq as imageSeq,
+            emo_code as emoCode,
+            save_name as saveName,
+            origin_name as originName
+        from
+            emo_image
+        where
+            emo_code = #{emoCode}
+    </select>
+
+</mapper>
