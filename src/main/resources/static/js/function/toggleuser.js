@@ -82,15 +82,7 @@ class ToggleService {
                     </div>
                     <div>
                         <ul class="abcd">
-                            <li class="nqp-inform">
-                                <a href="https://e.kakao.com/notices" class="nqp-link">새소식</a>
-                            </li>
-                            <li class="abcd-a">
-                                <a href="https://e.kakao.com/faq" class="nqp-link">자주묻는 질문</a>
-                            </li>
-                            <li class="abcd-a">
-                                <a href="https://e.kakao.com/number" class="nqp-link">이모티콘 일련번호 입력하기</a>
-                            </li>
+                            
                         </ul>
                     </div>
                     <div class="company-footer">
@@ -98,9 +90,6 @@ class ToggleService {
                             <a href="" class="company-link">
                                 <span class="company-kakao">kakao</span><span class="company-emoticon">emoticon</span><span class="company-shop">shop</span>
                             </a>
-                        </div>
-                        <div>
-                            <a href="https://www.kakaocorp.com" class="company-link2">@ kakao Corp</a>
                         </div>
                     </div>
                 `
@@ -144,15 +133,6 @@ class ToggleService {
                     </div>
                     <div>
                         <ul class="abcd">
-                            <li class="nqp-inform">
-                                <a href="https://e.kakao.com/notices" class="nqp-link">새소식</a>
-                            </li>
-                            <li class="abcd-a">
-                                <a href="https://e.kakao.com/faq" class="nqp-link">자주묻는 질문</a>
-                            </li>
-                            <li class="abcd-a">
-                                <a href="https://e.kakao.com/number" class="nqp-link">이모티콘 일련번호 입력하기</a>
-                            </li>
                             <li class="abcd-d">
                                 <a href="/logout" class="nqp-link">로그아웃 하기</a>
                             </li>
@@ -163,9 +143,6 @@ class ToggleService {
                             <a href="" class="company-link">
                                 <span class="company-kakao">kakao</span><span class="company-emoticon">emoticon</span><span class="company-shop">shop</span>
                             </a>
-                        </div>
-                        <div>
-                            <a href="https://www.kakaocorp.com" class="company-link2">@ kakao Corp</a>
                         </div>
                     </div>
                 

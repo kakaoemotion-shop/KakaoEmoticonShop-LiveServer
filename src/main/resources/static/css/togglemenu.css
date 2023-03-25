@@ -170,8 +170,7 @@
     margin-left: 15px;
 }
 
-.company-kakao,
-.company-shop {
+.company-kakao,.company-shop {
     font-size: 14px;
     color: #000;
     font-weight: 400;
@@ -190,3 +189,8 @@
     font-size: 12px;
     color: #999999
 }
+
+.info .searvice-info a {
+    pointer-events: none;
+}
+  

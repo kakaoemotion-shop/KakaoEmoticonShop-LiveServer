@@ -122,15 +122,15 @@
   justify-content: center;
 
   width: 100%;
-  height: 531px;
+  height: 212px;
 
-  background-color: #DAB8FF;
+  background-color: #fbd60c;
 }
 .main-img {
-  width: 1024px;
-  height: 531px;
+  width: 800px;
+  height: 212px;
 
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 
